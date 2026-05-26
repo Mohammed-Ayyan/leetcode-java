@@ -1,4 +1,4 @@
-package Traning;
+package Day1;
 
 public class numWaterBottles {
     public static void main(String[] args) {

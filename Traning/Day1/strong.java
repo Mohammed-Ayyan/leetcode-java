@@ -1,7 +1,7 @@
-package Traning;
+package Day1;
 
-public class Amstrong {
-    static int factorial(int n)
+public class strong {
+   static int factorial(int n)
     {
         if (n == 0)
             return 1;
@@ -10,20 +10,20 @@ public class Amstrong {
     }
     public static void main(String[] args) {
 
-        int number = 371, originalNumber, remainder, result = 0;
+        int number = 145, originalNumber, remainder, result = 0;
 
         originalNumber = number;
 
         while (originalNumber != 0)
         {
             remainder = originalNumber % 10;
-            result += Math.pow(remainder, 3);
+            result += factorial(remainder);
             originalNumber /= 10;
         }
 
         if(result == number)
-            System.out.println(number + " is an Armstrong number.");
+            System.out.println(number + " is an strong number.");
         else
-            System.out.println(number + " is not an Armstrong number.");
+            System.out.println(number + " is not an strong number.");
     }
 }
